@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <title>Procraft | Home</title>
+</head>
+
+<body>
+  <section class="mainSection">
+    <nav class="topNavbar">
+      <div class="logoHolder">
+        <img src="./../assets/svg/logo.svg" alt="logo" class="logo">
+      </div>
+      <div class="linksHolder">
+
+        <!-- start for mobile -->
+
+        <div class="rightDropDown">Menu<img src="../assets/svg/Group 2.svg" alt="" onclick="closeMenu()"></div>
+        <!-- end -->
+
+        <a href="index.html" class="link active">Home</a>
+        <a href="about.html" class="link">About us</a>
+        <div class="container">
+          <a href="#" class="link services" onclick="servicesSubMenu()">Services <img
+              src="../assets/svg/prime_sort-down-fill (1).svg" alt="Down Arrow" class="downArrow"></a>
+
+          <div class="servicesSubMenu">
+            <a href="../html/services/engineering.html" class="sublink">Engineering</a>
+            <a href="../html/services/maintenance.html" class="sublink">Maintenance</a>
+            <a href="../html/services/construction.html" class="sublink">Construction</a>
+            <a href="../html/services/management.html" class="sublink">Management</a>
+          </div>
+        </div>
+        <a href="../html/portfolio/index.html" class="link">Portfolio</a>
+        <a href="contact.html" class="link">Contact</a>
+      </div>
+      <div class="buttonHolder">
+        <button class="button">Sifariş et</button>
+      </div>
+      <h1>Procraft</h1>
+      <img src="../assets/svg/Group.svg" alt="" onclick="addMenu()" class="menulist">
+    </nav>
+    <div class="dashboardHolder">
+      <h1 class="dashboardTitle"><span class="fontWeightBold">Procraft</span> ilə məkanınızı yeniləyin!</h1>
+      <p class="dashboardText">Bizim mütəxəssilərimiz ehtiyaclarınıza uyğun mükəmməl layihə yaratmağınıza köməklik
+        göstərəcək</p>
+      <button class="button dashboardButton">Sifariş et</button>
+    </div>
+  </section>
+  <section class="moreSection">
+    <div class="moreLeftSide">
+      <h2 class="moreTitle animate-on-scroll"><span class="greenTextColor">PROCRAFT</span> - layihələndirmə, tikinti və
+        layihələrin idarə edilməsi üzrə ixtisaslaşmış, Bakının aparıcı mühəndis şirkətidir. </h2>
+      <p class="moreText">Biz dürüstlüyü, məsuliyyəti və yaradıcılığı qiymətləndiririk. Məqsədimiz sizə qabaqcıl
+        texnologiyaya əsaslanan ən yaxşı həllər və ehtiyaclarınızı dərindən dərk etməkdir.</p>
+      <button class="button moreButton">Ətraflı</button>
+    </div>
+    <div class="moreRightSide animate-on-scroll">
+      <img src="./../assets/img/image_1.jpg" alt="image" class="image">
+      <div class="greenLayer"></div>
+    </div>
+  </section>
+
+  <!-- start  -->
+  <section class="bodySection">
+
+    <h2 class="moreTitle animate-on-scroll"><span class="greenTextColor">PROCRAFT</span> - layihələndirmə, tikinti və
+      layihələrin idarə edilməsi üzrə ixtisaslaşmış, Bakının aparıcı mühəndis şirkətidir. </h2>
+    <div class="moreRightSide animate-on-scroll">
+      <img src="./../assets/img/image_1.jpg" alt="image" class="image">
+      <div class="greenLayer"></div>
+    </div>
+    <p class="moreText ">Biz dürüstlüyü, məsuliyyəti və yaradıcılığı qiymətləndiririk. Məqsədimiz sizə qabaqcıl
+      texnologiyaya əsaslanan ən yaxşı həllər və ehtiyaclarınızı dərindən dərk etməkdir.</p>
+    <div class="button-container">
+      <button class="button moreButton">Ətraflı</button>
+    </div>
+  </section>
+  <!-- end   -->
+
+  <section class="provideServicesSection">
+    <h2 class="provideServicesTitle">We Provide Services</h2>
+    <p class="provideServicesText">We help bring your projects to life with attention to every detail</p>
+    <div class="provideServicesCardContainer">
+      <div class="cardHolder animate-on-scroll">
+        <div class="iconHolder">
+          <img src="./../assets/svg/engineering.svg" alt="engineering" class="icon">
+        </div>
+        <h3 class="cardTitle">Engineering</h3>
+        <p class="cardText">Bring your ambitious project to file with our cutting-edge engineering solutions</p>
+        <button class="button moreButton provideServicesButton">Ətraflı <img src="./../assets/svg/right.svg"
+            alt="arrow_icon"></button>
+      </div>
+      <div class="cardHolder animate-on-scroll">
+        <div class="iconHolder">
+          <img src="./../assets/svg/maintenance.svg" alt="maintenance" class="icon">
+        </div>
+        <h3 class="cardTitle">Maintenance</h3>
+        <p class="cardText">Ensure seamless operations with our comprehensive maintenance services</p>
+        <button class="button moreButton provideServicesButton">Ətraflı <img src="./../assets/svg/right.svg"
+            alt="arrow_icon"></button>
+      </div>
+      <div class="cardHolder animate-on-scroll">
+        <div class="iconHolder">
+          <img src="./../assets/svg/construction.svg" alt="construction" class="icon">
+        </div>
+        <h3 class="cardTitle">Construction</h3>
+        <p class="cardText">Ensure seamless operations with our comprehensive maintenance services</p>
+        <button class="button moreButton provideServicesButton">Ətraflı <img src="./../assets/svg/right.svg"
+            alt="arrow_icon"></button>
+      </div>
+      <div class="cardHolder animate-on-scroll">
+        <div class="iconHolder">
+          <img src="./../assets/svg/management.svg" alt="management" class="icon">
+        </div>
+        <h3 class="cardTitle">Management</h3>
+        <p class="cardText">Enhance efficiency and manageability of your project with our professional management
+          services</p>
+        <button class="button moreButton provideServicesButton">Ətraflı <img src="./../assets/svg/right.svg"
+            alt="arrow_icon"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="constructionSection">
+    <h2>Tikinti işləri</h2>
+    <p>Bizim komandamiz sizin tikinti və təmir planlarınızı professional şəkildə həyata kecirmək üçün xidmətinizdədir
+    </p>
+    <div class="constructionImagesHolder">
+      <div class="leftSide">
+        <a href="#">
+          <img src="./../assets/img/image_2.jpg" alt="image_2">
+          <div class="overlay"></div>
+        </a>
+      </div>
+      <div class="rightSide">
+        <div class="columns">
+          <div class="topImageHolder first">
+            <a href="#">
+              <img src="./../assets/img/image_3.jpg" alt="image_3">
+              <div class="overlay"></div>
+            </a>
+          </div>
+          <div class="bottomImageHolder second">
+            <a href="#">
+              <img src="./../assets/img/image_4.jpg" alt="image_4">
+              <div class="overlay"></div>
+            </a>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="topImageHolder third">
+            <a href="#">
+              <img src="./../assets/img/image_5.jpg" alt="image_5">
+              <div class="overlay"></div>
+            </a>
+          </div>
+          <div class="bottomImageHolder fourth">
+            <a href="#">
+              <img src="./../assets/img/image_6.jpg" alt="image_6">
+              <div class="overlay"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footerSection">
+    <div class="topSide">
+      <div class="leftSide">
+        <div class="firstColumn">
+          <div>
+            <a href="#">About us</a>
+          </div>
+          <div>
+            <a href="#">Home</a>
+          </div>
+          <div>
+            <a href="#">Portfolio</a>
+          </div>
+        </div>
+        <div class="secondColumn">
+          <div>
+            <a href="#">Services</a>
+          </div>
+          <div class="subServices">
+            <div class="leftSide">
+              <div>
+                <a href="#">Engineering</a>
+              </div>
+              <div>
+                <a href="#">Maintenance</a>
+              </div>
+            </div>
+            <div class="rightSide">
+              <div>
+                <a href="#">Construction</a>
+              </div>
+              <div>
+                <a href="#">Management</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rightSide">
+        <div class="followUsSection">
+          <div class="title">Follow us</div>
+          <div class="icons">
+            <a href="#">
+              <img src="./../assets/svg/twitter.svg" alt="twitter">
+            </a>
+            <a href="#">
+              <img src="./../assets/svg/instagram.svg" alt="instagram">
+            </a>
+            <a href="#">
+              <img src="./../assets/svg/facebook.svg" alt="facebook">
+            </a>
+          </div>
+        </div>
+        <div class="callUsSection">
+          <div class="title">Call us</div>
+          <div class="phoneContainer">
+            <img src="./../assets/svg/phone.svg" alt="phone">
+            <span>
+              <a href="#">+994 55 227 45 77</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- start for mobile -->
+    <h1>Procraft</h1>
+    <!-- end -->
+    <div class="bottomSide">Since @2018</div>
+  </section>
+
+  <script src="./../js/scroll-animation.js"></script>
+  <script src="./../js/dashboard-animation.js"></script>
+  <script src="../js/sidebarToggle.js"></script>
+</body>
+
+</html>

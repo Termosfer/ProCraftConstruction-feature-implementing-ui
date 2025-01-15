@@ -1,0 +1,1655 @@
+@media only screen and (min-width: 1024px) {
+
+  .mainSection {
+    position: relative;
+    min-height: 49.03vw;
+    background: 
+      linear-gradient(180deg, rgba(15, 24, 57, 0.62) 0%, rgba(30, 30, 30, 0.62) 100%), 
+      url('./../assets/img/dashboard.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: growBackground 25s infinite;
+    margin: 0 -9.03vw;
+    padding: 0 9.03vw;
+  }
+
+  .topNavbar {
+    position: relative;
+    top: 4.24vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3.68vw;
+    height: 4.65vw;
+    background-color: #11121961;
+    margin: 0 -9.03vw;
+    padding: 0 9.03vw;
+  }
+
+  .noColorNavbar {
+    background-color: transparent !important;
+  }
+
+  .logoHolder {
+    width: 4.1vw;
+    height: 4.65vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .logo {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .linksHolder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.78vw;
+    white-space: nowrap;
+  }
+
+  .linksHolder .dark {
+    color: #696969;
+  }
+
+  .linksHolder .container {
+    position: relative;
+  }
+
+  .linksHolder .container .servicesSubMenu {
+    position: absolute;
+    display: none;
+    top: 4.7vw;
+    left: -5.5vw;
+    background-color: #FFFFFF;
+    box-shadow: -0.07vw 0.14vw 0.49vw 0vw #D1D1D1;
+    opacity: 0;
+    z-index: 10;
+  }
+
+  .services {
+    display: flex;
+    align-items: center;
+    height: 4.65vw;
+    box-sizing: border-box;
+  }
+
+  .linksHolder .container .services:hover + .servicesSubMenu,
+  .servicesSubMenu:hover {
+    display: flex !important;
+    flex-direction: column;
+    animation: fadeIn 0.4s ease forwards;
+  }
+
+  .linksHolder .container .servicesSubMenu .sublink {
+    text-decoration: none;
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.11vw;
+    background-color: transparent;
+    color: #131419;
+    transition: background-color 0.2s ease, color 0.1s ease;
+    padding: 1.04vw 4.86vw;
+  }
+
+  .linksHolder .container .servicesSubMenu .sublink:hover {
+    background-color: #229F90;
+    color: #FFFFFF;
+  }
+
+  .link {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.11vw;
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 0.56vw;
+  }
+
+  .active {
+    color: #2BCDBA !important;
+  }
+
+  .buttonHolder {
+    margin-left: auto;
+  }
+
+  .button {
+    font-family: "Inika";
+    font-weight: 500;
+    font-size: 1.11vw;
+    border: transparent;
+    border-radius: 1.11vw;
+    background-color: #229F90;
+    color: #FFFFFF;
+    transition: background-color 0.1s ease;
+    cursor: pointer;
+    padding: 1.04vw 3.89vw;
+  }
+
+  .button:hover {
+    background-color: #11685E;
+  }
+
+  .dashboardHolder {
+    position: relative;
+    top: 11.62vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2.14vw;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in 1s forwards, moveLeft 0.5s ease-in 1s forwards;
+  }
+
+  .dashboardTitle {
+    width: 54.31vw;
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 4.86vw;
+    color: #FFFFFF;
+  }
+
+  .fontWeightBold {
+    font-weight: 700 !important;
+  }
+
+  .dashboardText {
+    width: 47.36vw;
+    line-height: 1.51vw;
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.25vw;
+    color: #FFFFFF;
+  }
+
+  .dashboardButton {
+    width: fit-content !important;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 1.5s;
+    padding: 1.04vw 9.1vw !important;
+  }
+
+  .moreSection {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 1.67vw;
+    background-color: #ffffff;
+    margin-top: 7.15vw;
+    margin-bottom: 4.17vw;
+  }
+
+  .moreLeftSide {
+    display: flex;
+    flex-direction: column;
+    gap: 1.39vw;
+  }
+
+  .moreRightSide {
+    position: relative;
+    min-width: 33.06vw;
+    height: 24.72vw;
+    border-radius: 2.39vw;
+    overflow: hidden;
+  }
+
+  .moveLeftAnimation {
+    animation: moveLeft 0.5s ease-out forwards;
+  }
+
+  .moveUpAnimation {
+    animation: moveUp 1s ease-out forwards;
+  }
+
+  .moreTitle {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 2.78vw;
+    color: #131418;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards;
+    animation-delay: 0.3s;
+  }
+
+  .greenTextColor {
+    font-weight: 700 !important;
+    color: #229F90 !important;
+  }
+
+  .moreText {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.11vw;
+    color: #131418;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 0.5s;
+  }
+
+  .moreButton {
+    width: fit-content;
+    border: 0.07vw solid #229F90 !important;
+    background-color: #FFFFFF !important;
+    color: #229F90 !important;
+    transition: background-color 0.1s ease, color 0.1s ease;
+    opacity: 0;
+    animation: fadeIn 1.2s ease-in forwards;
+    animation-delay: 0.7s;
+    padding: 1.04vw 4.65vw !important;
+  }
+
+  .moreButton:hover {
+    background-color: #229F90 !important;
+    color: #FFFFFF !important;
+  }
+
+  .image {
+    min-width: 100%;
+    height: 100%;
+    transform: scale(1.2);
+    animation: shrinkBackground 5s forwards;
+    animation-delay: 0.3s;
+  }
+
+  .greenLayer {
+    position: absolute;
+    bottom: 0;
+    min-width: inherit;
+    height: 14.17vw;
+    background-color: #229F902E;
+    border-radius: 2.36vw;
+    z-index: 100;
+  }
+
+  .provideServicesSection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.39vw;
+    background-color: #FAFAFA;
+    margin: 0 -9.03vw;
+    padding: 1.39vw 9.03vw 4.38vw 9.03vw;
+  }
+
+  .provideServicesTitle {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 2.08vw;
+    color: #131418;
+  }
+
+  .provideServicesText {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.11vw;
+    color: #131418;
+  }
+
+  .otherServicesSection .container,
+  .provideServicesCardContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1.39vw;
+  }
+
+  .cardHolder {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.56vw;
+    border: 0.07vw solid #E7E6E6;
+    border-radius: 1.11vw;
+    background-color: #FFFFFF;
+    transform: translateY(4vw);
+    padding: 1.67vw 1.39vw;
+  }
+
+  .cardHolder:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  .cardHolder:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .cardHolder:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+  .cardHolder:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+
+  .iconHolder {
+    width: 2.22vw;
+    height: 2.22vw;
+  }
+
+  .icon {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cardTitle {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.11vw;
+    color: #131418;
+  }
+
+  .cardText {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 0.83vw;
+    color: #131418;
+    margin-bottom: 1vw;
+  }
+
+  .provideServicesButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35vw;
+    width: 100%;
+    border-radius: 0.83vw !important;
+    opacity: 1;
+    animation: none !important;
+    margin-top: auto !important;
+    padding-top: 0.78vw !important;
+    padding-bottom: 0.78vw !important;
+  }
+
+  .provideServicesButton:hover {
+    background-color: #229F90 !important;
+    color: #FFFFFF !important;
+  }
+
+  .provideServicesButton img {
+    width: 1.39vw;
+    height: 1.39vw;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    border-radius: 50%;
+  }
+
+  .provideServicesButton:hover img {
+    transform: rotateX(360deg);
+    background-color: #FFFFFF !important;
+  }
+
+  .constructionSection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.39vw;
+    background-color: #FFFFFF;
+    padding-top: 4.17vw;
+    padding-bottom: 8.2vw;
+  }
+
+  .constructionSection h2 {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 2.08vw;
+    color: #131418;
+  }
+
+  .constructionSection p {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.11vw;
+    color: #131418;
+  }
+
+  .constructionImagesHolder {
+    display: flex;
+    flex-direction: row;
+    gap: 1.39vw;
+    width: 100%;
+  }
+
+  .constructionImagesHolder .leftSide {
+    position: relative;
+    display: inline-block;
+    width: 40.21vw;
+    border-radius: 1.34vw;
+    overflow: hidden;
+  }
+
+  .constructionImagesHolder .leftSide a img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .constructionImagesHolder .leftSide a .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #16182699;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .constructionImagesHolder .leftSide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./../assets/img/image_2.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: transform 0.8s ease;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .constructionImagesHolder .leftSide:hover::before {
+    transform: scale(1.1);
+  }
+
+  .constructionImagesHolder .leftSide:hover a img {
+    transition: transform 0.8s ease;
+  }
+
+  .constructionImagesHolder .rightSide {
+    display: flex;
+    flex-direction: row;
+    gap: 1.39vw;
+  }
+
+  .constructionImagesHolder .rightSide .columns {
+    display: flex;
+    flex-direction: column;
+    gap: 0.69vw;
+  }
+
+  .constructionImagesHolder .rightSide .columns .topImageHolder {
+    position: relative;
+    display: inline-block;
+    width: 19.41vw;
+    border-radius: 1.11vw;
+    overflow: hidden;
+  }
+
+  .constructionImagesHolder .rightSide .columns .topImageHolder a img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .constructionImagesHolder .rightSide .columns .topImageHolder a .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #16182699;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .constructionImagesHolder .rightSide .columns .topImageHolder::before,
+  .constructionImagesHolder .rightSide .columns .bottomImageHolder::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: transform 0.8s ease;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .constructionImagesHolder .rightSide .columns .first::before {
+    background-image: url('./../assets/img/image_3.jpg');
+  }
+
+  .constructionImagesHolder .rightSide .columns .second::before {
+    background-image: url('./../assets/img/image_4.jpg');
+  }
+
+  .constructionImagesHolder .rightSide .columns .third::before {
+    background-image: url('./../assets/img/image_5.jpg');
+  }
+
+  .constructionImagesHolder .rightSide .columns .fourth::before {
+    background-image: url('./../assets/img/image_6.jpg');
+  }
+
+  .constructionImagesHolder .rightSide .columns .topImageHolder:hover::before,
+  .constructionImagesHolder .rightSide .columns .bottomImageHolder:hover::before {
+    transform: scale(1.1);
+  }
+
+  .constructionImagesHolder .rightSide .columns .topImageHolder:hover a img,
+  .constructionImagesHolder .rightSide .columns .bottomImageHolder:hover a img {
+    transition: transform 0.8s ease;
+  }
+
+  .constructionImagesHolder .rightSide .columns .bottomImageHolder {
+    position: relative;
+    display: inline-block;
+    width: 19.41vw;
+    border-radius: 1.11vw;
+    overflow: hidden;
+  }
+
+  .constructionImagesHolder .rightSide .columns .bottomImageHolder a img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .constructionImagesHolder .rightSide .columns .bottomImageHolder a .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #16182699;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .servicesTopSection {
+    width: 100%;
+    margin-bottom: calc(4.24vw + 2.78vw);
+  }
+
+  .servicesInfoHolder {
+    position: relative;
+    top: 4.24vw;
+    margin-top: 3.47vw;
+  }
+
+  .servicesInfoHolder h1 {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 2.08vw;
+    color: #131418;
+    margin-bottom: 0.69vw;
+  }
+
+  .servicesInfoHolder p {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.11vw;
+    color: #131418;
+  }
+
+  .servicesListSection {
+    position: relative;
+    width: 100%;
+    height: 43.96vw;
+    margin: 0 -9.03vw;
+    padding: 0 9.03vw;
+  }
+
+  .servicesListSection .container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0.56vw;
+  }
+
+  .servicesListSection .container .leftSide {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.25vw;
+    width: 25.21vw;
+    height: inherit;
+    z-index: 10;
+    padding: 0 0.97vw;
+  }
+
+  .engineering .container .leftSide {
+    background-color: #5E8BA2BA;
+  }
+
+  .management .container .leftSide {
+    background-color: #16867966;
+  }
+
+  .construction .container .leftSide {
+    background-color: #15425994;
+    left: auto;
+  }
+
+  .maintenance .container .leftSide {
+    background-color: #15425994;
+    left: auto;
+  }
+
+  .servicesListSection .container .leftSide h2 {
+    font-family: "Inika";
+    font-weight: 700;
+    font-size: 1.39vw;
+  }
+
+  .engineering .container .leftSide h2 {
+    color: #43C5B6;
+  }
+
+  .management .container .leftSide h2 {
+    color: #46D2C2;
+  }
+
+  .construction .container .leftSide h2 {
+    color: #64D8FD;
+  }
+
+  .maintenance .container .leftSide h2 {
+    color: #64D8FD;
+  }
+
+  .servicesListSection .container .leftSide ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .engineering .container .leftSide ul {
+    gap: 2.15vw;
+  }
+
+  .management .container .leftSide ul {
+    gap: 0.76vw;
+  }
+
+  .construction .container .leftSide ul {
+    gap: 1.18vw;
+  }
+
+  .maintenance .container .leftSide ul {
+    gap: 1.18vw;
+  }
+
+  .servicesListSection .container .leftSide ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+    list-style-type: none;
+  }
+
+  .container .leftSide ul li img {
+    position: relative;
+    width: 1.53vw;
+    height: 1.53vw;
+    filter: invert(13%) sepia(10%) saturate(538%) hue-rotate(109deg) brightness(92%) contrast(65%);
+  }
+
+  .management .container .leftSide ul li img {
+    filter: sepia(73%) saturate(375%) hue-rotate(115deg) brightness(88%) contrast(87%);
+  }
+
+  .construction .container .leftSide ul li img {
+    filter: sepia(48%) saturate(567%) hue-rotate(161deg) brightness(94%) contrast(113%);
+  }
+
+  .maintenance .container .leftSide ul li img {
+    filter: sepia(48%) saturate(567%) hue-rotate(161deg) brightness(94%) contrast(113%);
+  }
+
+  .container .leftSide ul li p {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.38vw;
+    color: #FFFFFF;
+  }
+
+  .servicesListSection .container .rightSide {
+    height: 100%;
+    overflow: hidden;
+    margin-right: -9.03vw;
+    padding-right: 9.03vw;
+  }
+
+  .servicesListSection .container .rightSide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .servicesListSection .container .flipped img {
+    transform: scaleX(-1);
+  }
+
+  .servicesListSection .container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .engineering .container .overlay {
+    background-color: transparent;
+  }
+
+  .management .container .overlay {
+    background-color: #9B9B9B69;
+  }
+
+  .construction .container .overlay {
+    background-color: #21252E7A;
+  }
+
+  .maintenance .container .overlay {
+    background-color: #15425963;
+  }
+
+  .otherServicesSection {
+    position: relative;
+    height: 100%;
+    background-color: #FFFFFF;
+    margin: 0 -9.03vw;
+    padding: 2.78vw 9.03vw 6.11vw 9.03vw;
+  }
+
+  .otherServicesSection .titleHolder {
+    margin-bottom: 2.78vw;
+  }
+
+  .otherServicesSection .titleHolder h2 {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 2.08vw;
+    color: #131418;
+  }
+
+  .otherServicesSection .container .cardHolder {
+    max-width: 19.44vw;
+    transform: translateY(0);
+    box-sizing: border-box;
+  }
+
+  .footerSection {
+    position: relative;
+    width: 100%;
+    background-color: #168679;
+    color: #FFFFFF;
+    margin: 8.2vw -9.03vw 0 -9.03vw;
+    padding: 1.94vw 9.03vw 1.39vw 9.03vw;
+  }
+
+  .footerSection .topSide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 0.07vw solid #FFFFFF;
+    padding-bottom: 1.94vw;
+  }
+
+  .footerSection .topSide .leftSide {
+    display: flex;
+    flex-direction: row;
+    gap: 3.13vw;
+  }
+
+  .footerSection .topSide .leftSide .firstColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1.11vw;
+  }
+
+  .footerSection .topSide .leftSide .firstColumn div a,
+  .footerSection .topSide .leftSide .secondColumn div a {
+    text-decoration: none;
+    font-family: "Inika";
+    font-weight: 700;
+    font-size: 1.11vw;
+    color: #FFFFFF;
+  }
+
+  .footerSection .topSide .leftSide .secondColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1.11vw;
+  }
+
+  .footerSection .topSide .leftSide .secondColumn .subServices {
+    display: flex;
+    flex-direction: row;
+    gap: 0.76vw;
+  }
+
+  .topSide .leftSide .secondColumn .subServices .leftSide,
+  .topSide .leftSide .secondColumn .subServices .rightSide {
+    display: flex;
+    flex-direction: column;
+    gap: 1.11vw;
+  }
+
+  .secondColumn .subServices .leftSide div a,
+  .secondColumn .subServices .rightSide div a {
+    text-decoration: none;
+    font-family: "Inika";
+    font-weight: 400 !important;
+    font-size: 0.83vw !important;
+    color: #FFFFFF;
+  }
+
+  .footerSection .topSide .rightSide {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 6.67vw;
+  }
+
+  .footerSection .topSide .rightSide .followUsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.69vw;
+  }
+
+  .footerSection .topSide .rightSide .followUsSection .title,
+  .footerSection .topSide .rightSide .callUsSection .title {
+    font-family: "Inika";
+    font-weight: 700;
+    font-size: 1.11vw;
+    color: #FFFFFF;
+    padding-left: 0.14vw;
+  }
+
+  .footerSection .topSide .rightSide .followUsSection .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 0.69vw;
+  }
+
+  .topSide .rightSide .followUsSection .icons a {
+    position: relative;
+    min-width: 2.22vw;
+    height: 2.22vw;
+    text-decoration: none;
+    border: 0.07vw solid #FFFFFF;
+    border-radius: 50%;
+  }
+
+  .rightSide .followUsSection .icons a img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1.39vw;
+    height: 1.39vw;
+  }
+
+  .footerSection .topSide .rightSide .callUsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1.29vw;
+    margin-bottom: 0.28vw;
+  }
+
+  .topSide .rightSide .callUsSection .phoneContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.32vw;
+  }
+
+  .topSide .rightSide .callUsSection .phoneContainer img {
+    width: 1.14vw;
+    height: 1.14vw;
+  }
+
+  .rightSide .callUsSection div span a {
+    text-decoration: none;
+    font-family: "Inika";
+    font-weight: 700;
+    font-size: 1.11vw;
+    color: #FFFFFF;
+    padding-right: 0.28vw;
+  }
+
+  .footerSection .bottomSide {
+    position: relative;
+    width: fit-content;
+    font-family: "Inika";
+    font-weight: 600;
+    font-size: 0.83vw;
+    color: #FFFFFF;
+    margin-top: 0.35vw;
+  }
+
+  .portfolioGridSection {
+    position: relative;
+    margin-bottom: 2.78vw;
+  }
+
+  .portfolioGridSection .portfolioGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.39vw;
+    margin-bottom: 1.39vw;
+  }
+
+  .portfolioGridSection .portfolioGrid .imageCard {
+    box-sizing: border-box;
+    border-radius: 0.56vw;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .portfolioGridSection .portfolioGrid .imageCard a img {
+    width: 100%;
+    height: auto;
+  }
+
+  .portfolioGridSection .moreProjects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .portfolioGridSection .moreProjects a {
+    width: fit-content;
+    text-decoration: none;
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.39vw;
+    color: #2A93C0;
+  }
+
+  .reviewsSection {
+    position: relative;
+    background-color: #FAFAFA;
+    margin: 0 -9.03vw 13.69vw -9.03vw;
+    padding: 2.36vw 9.03vw;
+  }
+
+  .reviewsSection .title {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 2.08vw;
+    color: #131418;
+    margin-bottom: 1.39vw;
+  }
+
+  .reviewsSection .reviewsContainer {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .reviewsSection .reviewsContainer .singleReview {
+    min-width: 100%;
+    transition: transform 1s ease;
+    box-sizing: border-box;
+  }
+
+  .reviewsSection .reviewsContainer .reviewAnimationFadeOut {
+    animation: fadeOut 0.8s ease-out 0.1s forwards;
+  }
+
+  .reviewsSection .reviewsContainer .reviewAnimationFadeIn {
+    animation: fadeIn 1.2s ease-in;
+  }
+
+  .reviewsSection .reviewsContainer .singleReview .text {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.11vw;
+    color: #131418;
+    margin-bottom: 2.08vw;
+  }
+
+  .reviewsSection .reviewsContainer .singleReview .bottomContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reviewsSection .directionButton {
+    position: absolute;
+    bottom: 3.54vw;
+    width: 2.36vw;
+    height: 2.36vw;
+    background-color: #FAFAFA;
+    cursor: pointer;
+  }
+
+  .reviewsSection .left {
+    left: 9.03vw;
+  }
+
+  .reviewsSection .right {
+    right: 9.03vw;
+  }
+
+  .reviewsSection .directionButton img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .reviewsSection .reviewsContainer .singleReview .bottomContainer .customerContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1.39vw;
+    align-items: center;
+  }
+
+  .reviewsContainer .singleReview .bottomContainer .customerContainer .leftSide {
+    position: relative;
+    width: 4.72vw;
+    height: 4.72vw;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .singleReview .bottomContainer .customerContainer .leftSide img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .reviewsContainer .singleReview .bottomContainer .customerContainer .rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0.47vw;
+  }
+
+  .singleReview .bottomContainer .customerContainer .rightSide .customerName {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.11vw;
+    color: #000000;
+  }
+
+  .singleReview .bottomContainer .customerContainer .rightSide .customerAddress {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 0.97vw;
+    color: #767676;
+  }
+
+  .singleReview .bottomContainer .customerContainer .rightSide .customerFeedback {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.59vw;
+    width: fit-content;
+  }
+
+  .bottomContainer .customerContainer .rightSide .customerFeedback img {
+    position: relative;
+    width: 1.32vw;
+    height: 1.32vw;
+  }
+
+  .contactSection {
+    position: relative;
+    top: 1.2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3.47vw;
+    margin-bottom: 15vw;
+  }
+
+  .contactSection .topSide {
+    display: flex;
+    flex-direction: row;
+    gap: 1.39vw;
+  }
+
+  .contactSection .topSide .leftSide {
+    width: 47.22vw;
+  }
+
+  .contactSection .topSide .leftSide .title {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 2.78vw;
+    color: #131418;
+    margin-bottom: 1.39vw;
+  }
+
+  .contactSection .topSide .leftSide .text {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.11vw;
+    color: #131418;
+  }
+
+  .contactSection .topSide .leftSide .contactDetails {
+    display: flex;
+    flex-direction: row;
+    gap: 1.39vw;
+    margin-top: 2.78vw;
+  }
+
+  .contactSection .topSide .leftSide .contactDetails .container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.49vw;
+    width: 12.5vw;
+  }
+
+  .topSide .leftSide .contactDetails .container p {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.04vw;
+    color: #131418;
+  }
+
+  .topSide .leftSide .contactDetails .container .bold {
+    font-weight: 700 !important;
+  }
+
+  .contactSection .topSide .rightSide {
+    position: relative;
+    width: 33.33vw;
+    border: 0.07vw solid #E7E6E6;
+    border-radius: 1.11vw;
+    box-shadow: 0vw 0.14vw 0.91vw 0.21vw #CBCBCB52;
+  }
+
+  .contactSection .topSide .rightSide .contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.39vw;
+    padding: 2.78vw 1.39vw 1.25vw 1.39vw;
+  }
+
+  .contactSection .topSide .rightSide .contactForm input {
+    width: 100%;
+    height: 2.78vw;
+    border: 0.07vw solid #EAE9E9;
+    border-radius: 0.83vw;
+    text-indent: 0.69vw;
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 0.97vw;
+    outline: none;
+  }
+
+  .topSide .rightSide .contactForm input::placeholder {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 0.97vw;
+    color: #ADADAD;
+  }
+
+  .topSide .rightSide .contactForm input:hover::placeholder {
+    color: #A1A1A3;
+  }
+
+  .contactSection .topSide .rightSide .contactForm textarea {
+    height: 12.43vw;
+    border: 0.07vw solid #EAE9E9;
+    border-radius: 0.83vw;
+    resize: none;
+    overflow: auto;
+    padding: 0.69vw;
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 0.97vw;
+    outline: none;
+  }
+
+  .topSide .rightSide .contactForm textarea::placeholder {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 0.97vw;
+    color: #ADADAD;
+  }
+
+  .topSide .rightSide .contactForm textarea:hover::placeholder {
+    color: #A1A1A3;
+  }
+
+  .contactSection .topSide .rightSide .contactForm .inputSubmit {
+    width: 100%;
+    height: 3.47vw;
+    background-color: #229F90;
+    color: #FFFFFF;
+    transition: background-color 0.1s ease;
+    font-family: "Inika";
+    font-weight: 500;
+    font-size: 1.11vw;
+    cursor: pointer;
+  }
+
+  .contactSection .topSide .rightSide .contactForm .inputSubmit:hover {
+    background-color: #11685E;
+  }
+
+  .contactSection .bottomSide {
+    position: relative;
+  }
+
+  .contactSection .bottomSide h2 {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 2.08vw;
+    color: #131418;
+    margin-bottom: 1.74vw;
+  }
+
+  .contactSection .bottomSide .cards {
+    display: flex;
+    flex-direction: row;
+    gap: 1.39vw;
+    align-items: stretch;
+    min-height: 14.72vw;
+  }
+
+  .contactSection .bottomSide .cards .singleCard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.07vw solid #E7E6E6;
+    border-radius: 1.11vw;
+    box-shadow: 0vw 0.14vw 0.91vw 0.21vw #CBCBCB52;
+  }
+
+  .contactSection .bottomSide .cards .singleCard .topSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 16.67vw;
+    border-bottom: 0.14vw solid #DFE5E8;
+    padding-bottom: 1.25vw;
+    margin-bottom: 1.04vw;
+  }
+
+  .bottomSide .cards .singleCard .topSide .iconHolder {
+    position: relative;
+    width: 2.78vw;
+    height: 2.78vw;
+  }
+
+  .cards .singleCard .topSide .iconHolder img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+  }
+
+  .bottomSide .cards .singleCard .topSide p {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.39vw;
+    color: #154259;
+  }
+
+  .bottomSide .cards .singleCard .bottomSide p {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.25vw;
+    color: #666669;
+  }
+
+  .servicesInfoHolder .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.56vw;
+    margin-bottom: 0.69vw;
+  }
+
+  .servicesInfoHolder .container .iconHolder {
+    position: relative;
+    width: 2.08vw;
+    height: 2.08vw;
+  }
+
+  .servicesInfoHolder .container h1 {
+    margin-bottom: 0 !important;
+  }
+
+  .servicesInfoHolder .container .iconHolder .backButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .singleWorkSection {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 1.39vw;
+    padding-bottom: 2.92vw;
+  }
+
+  .singleWorkSection .leftSide {
+    width: 52.87vw;
+    height: 37.87vw;
+    border-radius: 0.8vw;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .singleWorkSection .leftSide .mainPicture {
+    width: 100%;
+    height: 100%;
+  }
+
+  .singleWorkSection .rightSide {
+    width: 26.39vw;
+  }
+
+  .singleWorkSection .rightSide .topSide {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.39vw;
+    border-bottom: 0.07vw solid #DFE5E8;
+    padding-bottom: 1.42vw;
+  }
+
+  .singleWorkSection .rightSide .topSide .imageContainer {
+    position: relative;
+    width: 12.5vw;
+    height: 8.82vw;
+    border-radius: 0.56vw;
+    overflow: hidden;
+  }
+
+  .singleWorkSection .rightSide .topSide .imageContainer img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  .carousel-modal {
+    display: block; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0s linear 0.5s;
+  }
+
+  .carousel-modal.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease;
+  }
+  
+  .carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+  }
+  
+  .close {
+    position: absolute;
+    top: 1.39vw;
+    right: 2vw;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    width: 2.36vw;
+    height: 2.36vw;
+    cursor: pointer;
+  }
+
+  .prev img,
+  .next img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(301deg) brightness(111%) contrast(101%);
+  }
+  
+  .prev {
+    left: 1.39vw;
+  }
+  
+  .next {
+    right: 2vw;
+  }
+
+  .indicators {
+    position: absolute;
+    bottom: 1.74vw;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.69vw;
+  }
+  
+  .indicator {
+    width: 0.97vw;
+    height: 0.97vw;
+    background-color: #FFFFFF80;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .indicator.active {
+    background-color: #154259;
+  }
+
+  .singleWorkSection .rightSide .topSide .imageContainer .morePicturesLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF80;
+    color: #FFFFFF;
+    font-family: "Inika";
+    font-weight: 700;
+    font-size: 2.08vw;
+    pointer-events: none;
+    cursor: pointer;
+  }
+
+  .singleWorkSection .rightSide .bottomSide {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.25vw;
+    padding-top: 0.72vw;
+  }
+
+  .singleWorkSection .rightSide .bottomSide .textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.28vw;
+    min-width: 12.5vw;
+  }
+
+  .singleWorkSection .rightSide .bottomSide .textContainer .bold {
+    font-weight: 700 !important;
+    color: #5C5D60 !important;
+  }
+
+  .singleWorkSection .rightSide .bottomSide .textContainer p {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 0.97vw;
+    color: #666669;
+  }
+
+  .otherProjectsSection {
+    position: relative;
+    margin-top: -12.5vw;
+    margin-bottom: 13.89vw;
+  }
+
+  .otherProjectsSection .title {
+    text-align: center;
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.39vw;
+    color: #2A93C0;
+    margin-bottom: 1.39vw;
+  }
+
+  .otherProjectsSection .container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.39vw;
+    overflow-x: scroll;
+    scrollbar-color: rgba(16, 41, 70, 0.3) transparent;
+    scrollbar-width: thin;
+  }
+
+  .otherProjectsSection .container::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .otherProjectsSection .container::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0.42vw;
+    height: 0.42vw;
+  }
+
+  .otherProjectsSection .container::-webkit-scrollbar-thumb {
+    background-color: rgba(16, 41, 70, 0.3);
+    border-radius: 0.42vw;
+  }
+
+  .otherProjectsSection .container .imageContainer {
+    position: relative;
+    width: 26.09vw;
+    min-width: 26.09vw;
+    height: 18.06vw;
+    border-radius: 0.56vw;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 0.5vw;
+  }
+
+  .otherProjectsSection .container .imageContainer .projectLink img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+  }
+
+  .aboutSection {
+    position: relative;
+    margin-top: 8vw;
+  }
+
+  .aboutSection .imageContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: calc(13.89vw + 5vw);
+  }
+
+  .aboutSection .imageContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(182deg, #FFFEFE 6%, rgba(255, 254, 254, 0.6) 25%, rgba(255, 255, 255, 0) 44%);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .aboutSection .imageContainer img {
+    position: relative;
+    width: inherit;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .aboutSection .textContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26.39vw;
+    height: 12.57vw;
+    box-sizing: border-box;
+    z-index: 1;
+    padding: 1.39vw 2.78vw;
+  }
+
+  .aboutSection .bottomLeft {
+    left: 0;
+    bottom: -5vw;
+    background: linear-gradient(180deg, #95DCEF 0%, #C0EEFB 100%);
+  }
+
+  .aboutSection .topRight {
+    top: 0;
+    right: 0;
+    background: linear-gradient(180deg, #F2EB79 0%, #FAF9D6 100%);
+  }
+
+  .aboutSection .textContainer p {
+    font-family: "Inika";
+    font-weight: 400;
+    color: #000000;
+  }
+
+  .aboutSection .textContainer .text {
+    font-size: 1.11vw;
+  }
+
+  .aboutSection .textContainer .container {
+    display: inline-block;
+    width: auto;
+    margin-left: auto;
+  }
+
+  .aboutSection .textContainer .container .nameAndSurname {
+    font-size: 0.97vw;
+  }
+
+  .aboutSection .textContainer .container .jobPosition {
+    font-size: 0.83vw;
+  }
+}

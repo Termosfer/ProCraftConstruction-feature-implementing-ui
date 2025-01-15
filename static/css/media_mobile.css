@@ -1,0 +1,760 @@
+@media screen and (min-width:601px) {
+    .downArrow,
+    .bodySection,
+    .rightDropDown,
+    .topNavbar h1,
+    .topNavbar .menulist {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .singleWorkSection .bottomSide,
+    .carousel-modal,
+    .about-detail,
+    .footerSection .topSide,
+    .moreSection,
+    .buttonHolder {
+        display: none;
+    }
+    .mainSection {
+        position: relative;
+        background:
+            linear-gradient(180deg, rgba(15, 24, 57, 0.62) 0%, rgba(30, 30, 30, 0.62) 100%),
+            url('../assets/img/dashboard.jpg');
+        height: 600px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .topNavbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #151827ED;
+        color: #fff;
+        padding: 0 10px;
+        position: relative;
+    }
+    .topNavbar h1 {
+        font-size: 5.7vw;
+    }
+    .topNavbar .menulist {
+        cursor: pointer;
+    }
+    .topNavbar .linksHolder {
+        position: absolute;
+        z-index: 100;
+        top: 72px;
+        right: -200px;
+        width: 186px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fff;
+        color: #fff;
+    }
+    .topNavbar .linksHolder.open {
+        right: 0;
+    }
+    .topNavbar .linksHolder .link.active {
+        color: #2BCDBA;
+    }
+    .topNavbar .linksHolder a:hover {
+        color: #2BCDBA;
+    }
+    .topNavbar .linksHolder .link {
+        text-align: left;
+        width: 100%;
+        margin: 20px 0 10px 130px;
+        text-decoration: none;
+        color: #696969;
+        transition: all .3s ease;
+    }
+    .rightDropDown {
+        width: 100%;
+        height: 55px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #3C3F4F;
+        position: relative;
+        font-weight: 700;
+    }
+    .lightColor {
+        background-color: #F0F0F0;
+        color: #696969;
+    }
+    .lightColor img {
+        filter: grayscale(100%) brightness(50%) sepia(100%) saturate(0%) contrast(100%);
+    }
+    .rightDropDown>img {
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+    .topNavbar .linksHolder .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+        width: 100%;
+    }
+    .topNavbar .linksHolder .container>a .downArrow {
+        vertical-align: middle;
+        transition: all .3s ease;
+    }
+    .topNavbar .linksHolder .container .link:hover>.downArrow {
+        filter: invert(64%) sepia(79%) saturate(395%) hue-rotate(122deg) brightness(92%) contrast(89%);
+    }
+    .topNavbar .linksHolder .container .servicesSubMenu {
+        width: 100%;
+        display: none;
+    }
+    .topNavbar .linksHolder .container .servicesSubMenu.active {
+        display: block;
+    }
+    .topNavbar .linksHolder .container .servicesSubMenu .sublink {
+        text-decoration: none;
+        color: #131419;
+        height: 37px;
+        background-color: #f9f9f9;
+        padding-left: 65px;
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .topNavbar .linksHolder .container .servicesSubMenu .sublink:hover {
+        color: #fff;
+        background-color: #229F90;
+    }
+    .mainSection .dashboardHolder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 100%;
+        color: #fff;
+        width: 95vw;
+        margin: auto;
+    }
+    .mainSection .dashboardHolder .dashboardTitle {
+        font-size: 9vw;
+    }
+    .mainSection .dashboardHolder .fontWeightBold {
+        font-weight: 700;
+        font-size: 13.5vw;
+    }
+    .mainSection .dashboardHolder .dashboardText {
+        font-size: 4.55vw;
+    }
+    .button {
+        border-radius: 16px;
+        height: 14.3vw;
+        font-size: 4.55vw;
+        font-weight: 500;
+    }
+    .mainSection .dashboardHolder .dashboardButton {
+        background: #229F90;
+        color: #fff;
+        width: 95vw;
+        transition: all .3s ease;
+    }
+    .mainSection .dashboardHolder .dashboardButton:hover {
+        background-color: #11685E;
+    }
+    .bodySection {
+        padding: 30px 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 15px;
+        position: relative;
+    }
+    .bodySection .greenTextColor {
+        color: #229F90;
+    }
+    .bodySection .moreTitle {
+        font-size: 5.1vw;
+    }
+    .bodySection .moreText {
+        font-size: 4.55vw;
+    }
+    .button-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100%;
+        padding-top: 10px;
+    }
+    .moreButton {
+        border: 1px solid #229F90;
+        color: #229F90;
+        width: 47vw;
+        background-color: #fff;
+    }
+    .provideServicesButton {
+        border-radius: 12px;
+        width: 67.5vw;
+        height: 11.5vw;
+        background: #FBFAFA;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bodySection .moreRightSide {
+        position: relative;
+        border-radius: 25px;
+        width: 95vw;
+    }
+    .bodySection .moreRightSide .image {
+        width: 100%;
+        border-radius: 25px;
+    }
+    .bodySection .moreRightSide .greenLayer {
+        position: absolute;
+        bottom: 5px;
+        height: 50%;
+        width: 100%;
+        background-color: #229F902E;
+        border-radius: 25px;
+    }
+    .provideServicesSection {
+        background: #fafafa;
+        padding: 20px 10px;
+    }
+    .constructionSection h2,
+    .provideServicesSection .provideServicesTitle {
+        font-size: 5.67vw;
+        font-weight: 400;
+        color: #131418;
+    }
+    .constructionSection p,
+    .provideServicesSection .provideServicesText {
+        font-size: 4.55vw;
+        padding: 10px 0 20px 0;
+        color: #131418;
+    }
+    .provideServicesSection .provideServicesCardContainer {
+        display: flex;
+        overflow-x: hidden;
+        gap: 10px;
+        width: 100%;
+        scroll-behavior: auto;
+        cursor: grab;
+        user-select: none;
+    }
+    .provideServicesSection .provideServicesCardContainer:active {
+        cursor: grabbing;
+    }
+    .cardHolder {
+        border-radius: 16px;
+        border: 1px solid #E7E6E6;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #fff;
+    }
+    .cardHolder .cardTitle {
+        font-size: 4.55vw;
+    }
+    .cardHolder .cardText {
+        font-size: 3.4vw;
+    }
+    .cardHolder .provideServicesButton img {
+        height: 5vw;
+        width: 10vw;
+    }
+    .constructionImagesHolder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-top: 20px;
+    }
+    .constructionImagesHolder .leftSide {
+        position: relative;
+        height: auto;
+        height: 76.14vw;
+    }
+    .constructionImagesHolder .leftSide img {
+        width: 100%;
+        height: 100%;
+        border-radius: 7px;
+    }
+    .constructionImagesHolder .rightSide .topImageHolder .overlay,
+    .constructionImagesHolder .rightSide .bottomImageHolder .overlay,
+    .constructionImagesHolder .leftSide .overlay
+        {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #16182699;
+        border-radius: 7px;
+    }
+
+    .constructionImagesHolder .rightSide {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+    .constructionImagesHolder .rightSide .columns {
+        display: flex;
+        flex-direction: column;
+        width: 49%;
+        gap: 10px;
+        border-radius: 7px;
+    }
+    .constructionImagesHolder .rightSide .topImageHolder {
+        position: relative;
+        border-radius: 7px;
+        height: 47vw;
+    }
+    .constructionImagesHolder .rightSide .bottomImageHolder {
+        position: relative;
+        height: 25vw;
+        border-radius: 7px;
+    }
+    .constructionImagesHolder .rightSide .second a>img,
+    .constructionImagesHolder .rightSide .fourth a>img,
+    .constructionImagesHolder .rightSide .first a>img,
+    .constructionImagesHolder .rightSide .third a>img {
+        width: 100%;
+        height: 100%;
+        border-radius: 7px;
+    }
+    .footerSection {
+        background: #181B2A;
+        color: #696A70;
+        padding: 20px 10px;
+    }
+    .differentColor {
+        background-color: #168679;
+        color: #fff;
+    }
+    .differentColor>.h1 {
+        background-color: #168679;
+        color: #fff;
+        border-bottom: 2px solid #fff;
+    }
+    .footerSection h1 {
+        font-size: 5.67vw;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #696A70;
+    }
+    .footerSection .bottomSide {
+        font-size: 3vw;
+        font-weight: 600;
+        padding-top: 5px;
+    }
+    /* start Portfolio */
+    .portfolioGridSection {
+        padding: 0 10px;
+    }
+    .portfolioGridSection .portfolioGrid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        padding-bottom: 20px;
+    }
+    .portfolioGridSection .portfolioGrid .imageCard {
+        width: 46vw;
+    }
+    .portfolioGridSection .portfolioGrid .imageCard img {
+        width: 100%;
+        height: 100%;
+    }
+    .moreProjects a {
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        width: 100%;
+    }
+    /* end */
+
+    /* start Work */
+    .servicesInfoHolder .container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .servicesInfoHolder .container .iconHolder img {
+        width: 8.5vw;
+    }
+    .otherProjectsSection,
+    .singleWorkSection {
+        padding: 10px;
+    }
+    .reviewsSection {
+        padding: 50px 10px;
+        position: relative;
+        background-color: #FAFAFA;
+        color: #131418;
+    }
+    .reviewsSection .title {
+        font-size: 5.7vw;
+        padding-bottom: 10px;
+    }
+    .reviewsSection .reviewsContainer {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        overflow-x: auto;
+        gap: 5px;
+    }
+    .reviewsSection .reviewsContainer .singleReview {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        flex-shrink: 0;
+    }
+    .reviewsSection .reviewsContainer .customerContainer {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 15px;
+        padding: 20px 0;
+    }
+    .reviewsSection .reviewsContainer .customerContainer .rightSide .customerName {
+        font-size: 4.53vw;
+    }
+    .reviewsSection .reviewsContainer .customerContainer .rightSide .customerAddress {
+        font-size: 3.96vw;
+        color: #767676;
+    }
+    .reviewsSection .directionButton {
+        position: absolute;
+        bottom: 100px;
+        width: 2.36vw;
+        height: 2.36vw;
+        cursor: pointer;
+        background-color: transparent;
+    }
+    .reviewsSection .left {
+        left: 1vw;
+    }
+    .reviewsSection .right {
+        right: 7vw;
+    }
+    .singleWorkSection .leftSide .mainPicture {
+        width: 100%;
+        border-radius: 9px;
+    }
+    .singleWorkSection .rightSide .topSide {
+        display: flex;
+        justify-content: flex-start;
+        overflow: hidden;
+        gap: 5px;
+        scroll-behavior: auto;
+    }
+
+    .singleWorkSection .rightSide .topSide .imageContainer {
+        flex-shrink: 0;
+        width: 20vw;
+        height: auto;
+        padding: 0;
+        position: relative;
+    }
+    .singleWorkSection .rightSide .topSide .imageContainer img {
+        width: 100%;
+        height: 100%;
+    }
+    .singleWorkSection .rightSide .topSide .imageContainer .morePicturesLayer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: #229F9070;
+    }
+    .otherProjectsSection {
+        padding: 50px 0;
+    }
+    .moreProjects a,
+    .otherProjectsSection .title {
+        color: #2A93C0;
+        font-size: 4.6vw;
+        text-align: center;
+        font-weight: 700;
+        padding-bottom: 20px;
+    }
+    .otherProjectsSection .container {
+        display: flex;
+        overflow: auto;
+        margin: 0 10px;
+        scrollbar-width: thin;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+    .otherProjectsSection .container .imageContainer {
+        width: 70.5vw;
+        height: 50vw;
+        margin-right: 10px;
+    }
+    .otherProjectsSection .container .imageContainer:first-child {
+        margin-left: -10px;
+    }
+    .otherProjectsSection .container .imageContainer img {
+        width: 70.5vw;
+        height: 48vw;
+        border: 1px solid #E7E6E6;
+        border-radius: 5px;
+    }
+    /* end */
+
+    /* start Contact */
+    .contactSection .contactDetails {
+        display: flex;
+        align-items: start;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    .contactSection .topSide .leftSide {
+        padding: 20px 10px;
+    }
+    .contactSection .contactDetails .container {
+        font-size: 4vw;
+        width: 25vw;
+    }
+    .contactSection .contactDetails .container .bold {
+        font-weight: 700;
+    }
+    .contactSection .rightSide {
+        box-shadow: 0px 2px 13.1px 3px #CBCBCB52;
+    }
+    .contactSection .rightSide .contactForm {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 10px;
+        box-sizing: border-box;
+    }
+    textarea,
+    input {
+        border: 1px solid #EAE9E9;
+        border-radius: 12px;
+        height: 11vw;
+        transition: all .3s ease;
+    }
+    textarea:hover,
+    input:hover {
+        border: 1px solid #85CAC2;
+    }
+    .contactSection .rightSide textarea {
+        height: 31vw !important;
+    }
+    .contactSection .rightSide .inputSubmit {
+        background-color: #229F90;
+        border-radius: 16px;
+        color: #fff;
+        font-size: 4.7vw;
+        height: 14.3vw;
+    }
+    .contactSection .rightSide .inputSubmit:hover {
+        background: #11685E;
+    }
+    .contactSection .rightSide input::placeholder,
+    .contactSection .rightSide textarea::placeholder {
+        color: #ADADAD;
+        font-size: 4vw;
+        padding: 10px 0 0 10px;
+    }
+    .contactSection .rightSide textarea::placeholder {
+        color: #CDCDCD;
+    }
+    .contactSection .bottomSide {
+        padding-top: 50px;
+    }
+    .contactSection .bottomSide h2 {
+        font-size: 5.7vw;
+        color: #131418;
+        padding: 20px 10px;
+    }
+    .contactSection .bottomSide .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .contactSection .bottomSide .cards .singleCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 95vw;
+        padding: 30px 0px;
+        border-radius: 16px;
+        border: 1px solid #E7E6E6;
+        box-shadow: 0px 2px 13.1px 3px #CBCBCB52;
+        text-align: center;
+    }
+    .contactSection .bottomSide .cards .singleCard .topSide {
+        border-bottom: 2px solid #DFE5E8;
+        width: 60%;
+        padding-bottom: 10px;
+        font-size: 5.7vw;
+        color: #154259;
+    }
+    .contactSection .bottomSide .cards .singleCard .bottomSide {
+        font-size: 5.1vw;
+        color: #666669;
+        padding-top: 10px;
+    }
+    /* end */
+
+    /*  About us */
+    .noColorNavbar {
+        color: #000000;
+        background-color: transparent;
+        box-shadow: 0px 4px 4px 0px #0000000D;
+    }
+    .servicesInfoHolder {
+        padding: 20px 10px;
+    }
+    .contactSection h1,
+    .servicesInfoHolder h1 {
+        font-size: 5.7vw;
+        color: #131419;
+        padding-bottom: 10px;
+    }
+    .contactSection .text,
+    .textContainer .text,
+    .servicesInfoHolder p {
+        font-size: 4.55vw;
+        color: #131419;
+    }
+    .contactSection,
+    .aboutSection {
+        padding-bottom: 50px;
+    }
+    .constructionSection {
+        padding: 20px 10px 50px 10px;
+    }
+    .imageContainer {
+        width: 100vw;
+        height: 80vw;
+        box-sizing: border-box;
+        padding: 0px 10px 30px 10px;
+    }
+    .imageContainer img {
+        width: 100%;
+        height: 100%;
+    }
+    .topRight {
+        background: linear-gradient(180deg, #F2EB79 0%, #FAF9D6 100%);
+    }
+    .bottomLeft {
+        background: linear-gradient(180deg, #95DCEF 0%, #C0EEFB 100%);
+    }
+    .textContainer {
+        padding: 20px 10px;
+        margin: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+    .textContainer .container {
+        padding: 10px;
+    }
+    .textContainer .container .nameAndSurname {
+        font-size: 4vw;
+    }
+    .textContainer .container .jobPosition {
+        font-size: 3.4vw;
+    }
+    /* start services Constraction */
+    .servicesListSection {
+        padding: 0 10px;
+    }
+    .servicesListSection .container {
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .servicesListSection .container ul li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 10px 0;
+        color: #131418;
+    }
+    .servicesListSection .container>.rightSide {
+        order: 1;
+        width: 100%;
+        height: 54vw;
+        position: relative;
+        border-radius: 3px;
+
+    }
+    .servicesListSection .container>.rightSide::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #0A2635A6;
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+    }
+    .servicesListSection .container>.rightSide img {
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+    }
+    .servicesListSection .container>.leftSide {
+        order: 0;
+        padding: 20px 0;
+    }
+    .servicesListSection .container>.leftSide h2 {
+        color: #64D8FD;
+        font-weight: 700;
+    }
+    .management .container>.leftSide h2,
+    .engineering .container>.leftSide h2 {
+        color: #43C5B6;
+        font-weight: 700;
+    }
+    .servicesListSection .container>.leftSide h2,
+    .servicesListSection .container>.leftSide ul li p {
+        font-size: 4.55vw;
+    }
+    .servicesListSection .container>.leftSide ul li img {
+        filter: sepia(48%) saturate(567%) hue-rotate(161deg) brightness(94%) contrast(113%);
+
+    }
+    .management .container>.leftSide ul li img,
+    .engineering .container>.leftSide ul li img {
+        filter: invert(13%) sepia(10%) saturate(538%) hue-rotate(109deg) brightness(92%) contrast(65%);
+    }
+    .otherServicesSection {
+        padding: 0 10px 50px 10px;
+    }
+    .otherServicesSection .titleHolder h2 {
+        font-size: 5.7vw;
+        padding-bottom: 10px;
+        color: #131418;
+    }
+    .otherServicesSection .container {
+        display: flex;
+        gap: 10px;
+        overflow-x: hidden;
+        scroll-behavior: auto;
+        user-select: none;
+        color: #131418;
+    }
+    /* end */
+}

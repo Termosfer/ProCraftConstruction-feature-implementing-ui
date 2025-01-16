@@ -123,14 +123,14 @@
 
     .topNavbar .linksHolder .container>a .downArrow {
         vertical-align: middle;
-       
+
     }
 
     .topNavbar .linksHolder .container .link:hover>.downArrow {
         filter: invert(64%) sepia(79%) saturate(395%) hue-rotate(122deg) brightness(92%) contrast(89%);
-        
+
     }
-  
+
 
     .topNavbar .linksHolder .container .servicesSubMenu {
         width: 100%;
@@ -140,12 +140,12 @@
     .topNavbar .linksHolder .container .servicesSubMenu.active {
         display: block;
     }
-   
+
     .topNavbar .linksHolder .container .link.active .downArrow {
         filter: invert(64%) sepia(79%) saturate(395%) hue-rotate(122deg) brightness(92%) contrast(89%);
         transform: scaleY(-1);
     }
-  
+
 
     .topNavbar .linksHolder .container .servicesSubMenu .sublink {
         text-decoration: none;
@@ -301,7 +301,7 @@
         user-select: none;
     }
 
-   /*  .provideServicesSection .provideServicesCardContainer:active {
+    /*  .provideServicesSection .provideServicesCardContainer:active {
         cursor: grabbing;
     } */
 
@@ -540,24 +540,28 @@
     }
 
     .singleWorkSection .rightSide .topSide {
+        height: 15vw;
+        gap: 5px;
         display: flex;
         justify-content: flex-start;
         overflow-x: scroll;
-        gap: 5px;
+        overflow-y: hidden;
         scroll-behavior: auto;
     }
 
     .singleWorkSection .rightSide .topSide .imageContainer {
         flex-shrink: 0;
         width: 20vw;
-        height: 100%;
         padding: 0;
+        height: 100%;
         position: relative;
+        border-radius: 3px;
     }
 
-    .singleWorkSection .rightSide .topSide .imageContainer img {
+    .singleWorkSection .rightSide .topSide .imageContainer .clickable {
         width: 100%;
         height: 100%;
+        border-radius: 3px;
     }
 
     .singleWorkSection .rightSide .topSide .imageContainer .morePicturesLayer {
@@ -569,7 +573,9 @@
         justify-content: center;
         width: 100%;
         height: 100%;
-        background-color: #229F9070;
+        background-color: #FFFFFF80;
+        color: #fff;
+        border-radius: 3px;
     }
 
     .otherProjectsSection {

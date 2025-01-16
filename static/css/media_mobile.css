@@ -293,17 +293,17 @@
 
     .provideServicesSection .provideServicesCardContainer {
         display: flex;
-        overflow-x: hidden;
+        overflow-x: scroll;
         gap: 10px;
         width: 100%;
         scroll-behavior: auto;
-        cursor: grab;
+        /* cursor: grab; */
         user-select: none;
     }
 
-    .provideServicesSection .provideServicesCardContainer:active {
+   /*  .provideServicesSection .provideServicesCardContainer:active {
         cursor: grabbing;
-    }
+    } */
 
     .cardHolder {
         border-radius: 16px;
@@ -542,7 +542,7 @@
     .singleWorkSection .rightSide .topSide {
         display: flex;
         justify-content: flex-start;
-        overflow: hidden;
+        overflow-x: scroll;
         gap: 5px;
         scroll-behavior: auto;
     }
@@ -550,7 +550,7 @@
     .singleWorkSection .rightSide .topSide .imageContainer {
         flex-shrink: 0;
         width: 20vw;
-        height: auto;
+        height: 100%;
         padding: 0;
         position: relative;
     }
@@ -897,7 +897,7 @@
     .otherServicesSection .container {
         display: flex;
         gap: 10px;
-        overflow-x: hidden;
+        overflow-x: scroll;
         scroll-behavior: auto;
         user-select: none;
         color: #131418;

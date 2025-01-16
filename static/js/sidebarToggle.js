@@ -2,6 +2,13 @@ const menu = document.querySelector(' .topNavbar .linksHolder');
 const subMenu = document.querySelector(" .topNavbar .linksHolder .container .servicesSubMenu")
 const closeIcon = document.querySelector(".menulist");
 const container = document.querySelector('.provideServicesCardContainer');
+const downArrowColor = document.querySelector(".topNavbar .linksHolder .container .services .downArrow")
+const services = document.querySelector(".topNavbar .linksHolder .container .services")
+const home = document.querySelector(".topNavbar .linksHolder .link[href='index.html']")
+const aboutLink = document.querySelector(".linksHolder .link[href='about.html']");
+const contact = document.querySelector(".linksHolder .link[href='contact.html']");
+const portfolio = document.querySelector(".linksHolder .link[href='../portfolio/index.html']");
+const img =  document.querySelector(".topNavbar .linksHolder .container .services .downArrow")
 function addMenu() {
     menu.classList.add('open');
     closeIcon.style.cursor = "default";
@@ -14,6 +21,12 @@ function closeMenu() {
 
 function servicesSubMenu() {
     subMenu.classList.toggle("active")
+    downArrowColor.classList.toggle("active")
+    services.classList.toggle("active")
+    home.classList.remove("active")
+    aboutLink.classList.remove("active");
+    contact.classList.remove("active");
+    portfolio.classList.remove("active");
 }
 
 

@@ -28,7 +28,6 @@ function closeMenu() {
     subMenu.classList.remove("active")
     body.classList.remove('menu-open');
     cover.style.display = "none"
-    
     closeIcon.style.cursor = "pointer";
 }
 

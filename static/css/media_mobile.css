@@ -319,13 +319,8 @@
         gap: 10px;
         width: 100%;
         scroll-behavior: auto;
-        /* cursor: grab; */
         user-select: none;
     }
-
-    /*  .provideServicesSection .provideServicesCardContainer:active {
-        cursor: grabbing;
-    } */
 
     .cardHolder {
         border-radius: 16px;
@@ -333,8 +328,19 @@
         padding: 20px;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         gap: 10px;
         background-color: #fff;
+    }
+
+    .cardHolder .iconHolder {
+        width: 7.1vw;
+        height: 7.1vw;
+    }
+
+    .cardHolder .iconHolder img {
+        width: 100%;
+        height: 100%;
     }
 
     .cardHolder .cardTitle {
@@ -348,6 +354,17 @@
     .cardHolder .provideServicesButton img {
         height: 5vw;
         width: 10vw;
+    }
+    .cardHolder:hover  {
+        box-shadow: 0px 2px 13.1px 3px #CBCBCB52;
+        
+    }
+    .cardHolder:hover .provideServicesButton {
+        background-color: #229F90;
+        color: #fff;
+    }
+    .cardHolder:hover .provideServicesButton img{
+        filter: brightness(0) invert(1);
     }
 
     .constructionImagesHolder {

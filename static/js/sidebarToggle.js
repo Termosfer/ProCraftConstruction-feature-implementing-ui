@@ -8,14 +8,27 @@ const home = document.querySelector(".topNavbar .linksHolder .link[href='index.h
 const aboutLink = document.querySelector(".linksHolder .link[href='about.html']");
 const contact = document.querySelector(".linksHolder .link[href='contact.html']");
 const portfolio = document.querySelector(".linksHolder .link[href='../portfolio/index.html']");
-const img =  document.querySelector(".topNavbar .linksHolder .container .services .downArrow")
+const img = document.querySelector(".topNavbar .linksHolder .container .services .downArrow")
+const cover = document.querySelector(".cover")
+const topnavbar = document.querySelector(".topNavbar")
+const body = document.body;
 function addMenu() {
     menu.classList.add('open');
     closeIcon.style.cursor = "default";
+    if (menu.classList.contains('open')) {
+        body.classList.add('menu-open');
+        cover.style.display = "block"
+    } else {
+        body.classList.remove('menu-open');
+        cover.style.display = "none"
+    }
 }
 function closeMenu() {
     menu.classList.remove('open');
     subMenu.classList.remove("active")
+    body.classList.remove('menu-open');
+    cover.style.display = "none"
+    
     closeIcon.style.cursor = "pointer";
 }
 
@@ -38,22 +51,22 @@ container.addEventListener("mousedown", (e) => {
     startX = e.pageX - container.offsetLeft
     console.log(startX, "start")
     scrollLeft = container.scrollLeft
-    
+
 })
 
 container.addEventListener("mouseleave", () => {
     isMouseDown = false
-   
+
 })
 container.addEventListener("mouseup", () => {
     isMouseDown = false
-     
+
 })
 
 container.addEventListener("mousemove", (e) => {
     if (!isMouseDown) return;
     e.preventDefault();
-    
+
     const x = e.pageX - container.offsetLeft;
     console.log(x)
     const walk = (x - startX) * 1;

@@ -1,11 +1,13 @@
 @media only screen and (min-width: 1024px) {
-
   .mainSection {
     position: relative;
     min-height: 49.03vw;
-    background: 
-      linear-gradient(180deg, rgba(15, 24, 57, 0.62) 0%, rgba(30, 30, 30, 0.62) 100%), 
-      url('./../assets/img/dashboard.jpg');
+    background: linear-gradient(
+        180deg,
+        rgba(15, 24, 57, 0.62) 0%,
+        rgba(30, 30, 30, 0.62) 100%
+      ),
+      url("./../assets/img/dashboard.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -66,8 +68,8 @@
     display: none;
     top: 4.7vw;
     left: -5.5vw;
-    background-color: #FFFFFF;
-    box-shadow: -0.07vw 0.14vw 0.49vw 0vw #D1D1D1;
+    background-color: #ffffff;
+    box-shadow: -0.07vw 0.14vw 0.49vw 0vw #d1d1d1;
     opacity: 0;
     z-index: 10;
   }
@@ -78,7 +80,7 @@
     height: 4.65vw;
     box-sizing: border-box;
   }
-
+  
   .linksHolder .container .services:hover + .servicesSubMenu,
   .servicesSubMenu:hover {
     display: flex !important;
@@ -98,8 +100,8 @@
   }
 
   .linksHolder .container .servicesSubMenu .sublink:hover {
-    background-color: #229F90;
-    color: #FFFFFF;
+    background-color: #229f90;
+    color: #ffffff;
   }
 
   .link {
@@ -107,13 +109,16 @@
     font-weight: 400;
     font-size: 1.11vw;
     text-decoration: none;
-    color: #FFFFFF;
+    color: #ffffff;
     cursor: pointer;
     padding: 0.56vw;
+    transition: all .3s ease;
   }
-
+  .linksHolder .link:hover {
+    color: #2bcdba;
+  }
   .active {
-    color: #2BCDBA !important;
+    color: #2bcdba !important;
   }
 
   .buttonHolder {
@@ -126,15 +131,15 @@
     font-size: 1.11vw;
     border: transparent;
     border-radius: 1.11vw;
-    background-color: #229F90;
-    color: #FFFFFF;
+    background-color: #229f90;
+    color: #ffffff;
     transition: background-color 0.1s ease;
     cursor: pointer;
     padding: 1.04vw 3.89vw;
   }
 
   .button:hover {
-    background-color: #11685E;
+    background-color: #11685e;
   }
 
   .dashboardHolder {
@@ -144,7 +149,8 @@
     flex-direction: column;
     gap: 2.14vw;
     opacity: 0;
-    animation: fadeIn 0.5s ease-in 1s forwards, moveLeft 0.5s ease-in 1s forwards;
+    animation: fadeIn 0.5s ease-in 1s forwards,
+      moveLeft 0.5s ease-in 1s forwards;
   }
 
   .dashboardTitle {
@@ -152,7 +158,7 @@
     font-family: "Inika";
     font-weight: 400;
     font-size: 4.86vw;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .fontWeightBold {
@@ -165,7 +171,7 @@
     font-family: "Inika";
     font-weight: 400;
     font-size: 1.25vw;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .dashboardButton {
@@ -220,7 +226,7 @@
 
   .greenTextColor {
     font-weight: 700 !important;
-    color: #229F90 !important;
+    color: #229f90 !important;
   }
 
   .moreText {
@@ -235,9 +241,9 @@
 
   .moreButton {
     width: fit-content;
-    border: 0.07vw solid #229F90 !important;
-    background-color: #FFFFFF !important;
-    color: #229F90 !important;
+    border: 0.07vw solid #229f90 !important;
+    background-color: #ffffff !important;
+    color: #229f90 !important;
     transition: background-color 0.1s ease, color 0.1s ease;
     opacity: 0;
     animation: fadeIn 1.2s ease-in forwards;
@@ -246,8 +252,8 @@
   }
 
   .moreButton:hover {
-    background-color: #229F90 !important;
-    color: #FFFFFF !important;
+    background-color: #229f90 !important;
+    color: #ffffff !important;
   }
 
   .image {
@@ -263,7 +269,7 @@
     bottom: 0;
     min-width: inherit;
     height: 14.17vw;
-    background-color: #229F902E;
+    background-color: #229f902e;
     border-radius: 2.36vw;
     z-index: 100;
   }
@@ -273,7 +279,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.39vw;
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     margin: 0 -9.03vw;
     padding: 1.39vw 9.03vw 4.38vw 9.03vw;
   }
@@ -304,9 +310,9 @@
     display: flex;
     flex-direction: column;
     gap: 0.56vw;
-    border: 0.07vw solid #E7E6E6;
+    border: 0.07vw solid #e7e6e6;
     border-radius: 1.11vw;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     transform: translateY(4vw);
     padding: 1.67vw 1.39vw;
   }
@@ -368,8 +374,8 @@
   }
 
   .provideServicesButton:hover {
-    background-color: #229F90 !important;
-    color: #FFFFFF !important;
+    background-color: #229f90 !important;
+    color: #ffffff !important;
   }
 
   .provideServicesButton img {
@@ -382,7 +388,7 @@
 
   .provideServicesButton:hover img {
     transform: rotateX(360deg);
-    background-color: #FFFFFF !important;
+    background-color: #ffffff !important;
   }
 
   .constructionSection {
@@ -390,7 +396,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.39vw;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     padding-top: 4.17vw;
     padding-bottom: 8.2vw;
   }
@@ -448,7 +454,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('./../assets/img/image_2.jpg');
+    background-image: url("./../assets/img/image_2.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     transition: transform 0.8s ease;
@@ -517,23 +523,26 @@
   }
 
   .constructionImagesHolder .rightSide .columns .first::before {
-    background-image: url('./../assets/img/image_3.jpg');
+    background-image: url("./../assets/img/image_3.jpg");
   }
 
   .constructionImagesHolder .rightSide .columns .second::before {
-    background-image: url('./../assets/img/image_4.jpg');
+    background-image: url("./../assets/img/image_4.jpg");
   }
 
   .constructionImagesHolder .rightSide .columns .third::before {
-    background-image: url('./../assets/img/image_5.jpg');
+    background-image: url("./../assets/img/image_5.jpg");
   }
 
   .constructionImagesHolder .rightSide .columns .fourth::before {
-    background-image: url('./../assets/img/image_6.jpg');
+    background-image: url("./../assets/img/image_6.jpg");
   }
 
   .constructionImagesHolder .rightSide .columns .topImageHolder:hover::before,
-  .constructionImagesHolder .rightSide .columns .bottomImageHolder:hover::before {
+  .constructionImagesHolder
+    .rightSide
+    .columns
+    .bottomImageHolder:hover::before {
     transform: scale(1.1);
   }
 
@@ -623,7 +632,7 @@
   }
 
   .engineering .container .leftSide {
-    background-color: #5E8BA2BA;
+    background-color: #5e8ba2ba;
   }
 
   .management .container .leftSide {
@@ -647,19 +656,19 @@
   }
 
   .engineering .container .leftSide h2 {
-    color: #43C5B6;
+    color: #43c5b6;
   }
 
   .management .container .leftSide h2 {
-    color: #46D2C2;
+    color: #46d2c2;
   }
 
   .construction .container .leftSide h2 {
-    color: #64D8FD;
+    color: #64d8fd;
   }
 
   .maintenance .container .leftSide h2 {
-    color: #64D8FD;
+    color: #64d8fd;
   }
 
   .servicesListSection .container .leftSide ul {
@@ -695,26 +704,30 @@
     position: relative;
     width: 1.53vw;
     height: 1.53vw;
-    filter: invert(13%) sepia(10%) saturate(538%) hue-rotate(109deg) brightness(92%) contrast(65%);
+    filter: invert(13%) sepia(10%) saturate(538%) hue-rotate(109deg)
+      brightness(92%) contrast(65%);
   }
 
   .management .container .leftSide ul li img {
-    filter: sepia(73%) saturate(375%) hue-rotate(115deg) brightness(88%) contrast(87%);
+    filter: sepia(73%) saturate(375%) hue-rotate(115deg) brightness(88%)
+      contrast(87%);
   }
 
   .construction .container .leftSide ul li img {
-    filter: sepia(48%) saturate(567%) hue-rotate(161deg) brightness(94%) contrast(113%);
+    filter: sepia(48%) saturate(567%) hue-rotate(161deg) brightness(94%)
+      contrast(113%);
   }
 
   .maintenance .container .leftSide ul li img {
-    filter: sepia(48%) saturate(567%) hue-rotate(161deg) brightness(94%) contrast(113%);
+    filter: sepia(48%) saturate(567%) hue-rotate(161deg) brightness(94%)
+      contrast(113%);
   }
 
   .container .leftSide ul li p {
     font-family: "Inika";
     font-weight: 400;
     font-size: 1.38vw;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .servicesListSection .container .rightSide {
@@ -749,11 +762,11 @@
   }
 
   .management .container .overlay {
-    background-color: #9B9B9B69;
+    background-color: #9b9b9b69;
   }
 
   .construction .container .overlay {
-    background-color: #21252E7A;
+    background-color: #21252e7a;
   }
 
   .maintenance .container .overlay {
@@ -763,7 +776,7 @@
   .otherServicesSection {
     position: relative;
     height: 100%;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     margin: 0 -9.03vw;
     padding: 2.78vw 9.03vw 6.11vw 9.03vw;
   }
@@ -789,7 +802,7 @@
     position: relative;
     width: 100%;
     background-color: #168679;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 8.2vw -9.03vw 0 -9.03vw;
     padding: 1.94vw 9.03vw 1.39vw 9.03vw;
   }
@@ -798,7 +811,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 0.07vw solid #FFFFFF;
+    border-bottom: 0.07vw solid #ffffff;
     padding-bottom: 1.94vw;
   }
 
@@ -820,7 +833,7 @@
     font-family: "Inika";
     font-weight: 700;
     font-size: 1.11vw;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .footerSection .topSide .leftSide .secondColumn {
@@ -848,7 +861,7 @@
     font-family: "Inika";
     font-weight: 400 !important;
     font-size: 0.83vw !important;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .footerSection .topSide .rightSide {
@@ -869,7 +882,7 @@
     font-family: "Inika";
     font-weight: 700;
     font-size: 1.11vw;
-    color: #FFFFFF;
+    color: #ffffff;
     padding-left: 0.14vw;
   }
 
@@ -884,7 +897,7 @@
     min-width: 2.22vw;
     height: 2.22vw;
     text-decoration: none;
-    border: 0.07vw solid #FFFFFF;
+    border: 0.07vw solid #ffffff;
     border-radius: 50%;
   }
 
@@ -921,7 +934,7 @@
     font-family: "Inika";
     font-weight: 700;
     font-size: 1.11vw;
-    color: #FFFFFF;
+    color: #ffffff;
     padding-right: 0.28vw;
   }
 
@@ -931,7 +944,7 @@
     font-family: "Inika";
     font-weight: 600;
     font-size: 0.83vw;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-top: 0.35vw;
   }
 
@@ -971,12 +984,12 @@
     font-family: "Inika";
     font-weight: 400;
     font-size: 1.39vw;
-    color: #2A93C0;
+    color: #2a93c0;
   }
 
   .reviewsSection {
     position: relative;
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     margin: 0 -9.03vw 13.69vw -9.03vw;
     padding: 2.36vw 9.03vw;
   }
@@ -1030,7 +1043,7 @@
     bottom: 3.54vw;
     width: 2.36vw;
     height: 2.36vw;
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     cursor: pointer;
   }
 
@@ -1047,14 +1060,22 @@
     height: 100%;
   }
 
-  .reviewsSection .reviewsContainer .singleReview .bottomContainer .customerContainer {
+  .reviewsSection
+    .reviewsContainer
+    .singleReview
+    .bottomContainer
+    .customerContainer {
     display: flex;
     flex-direction: row;
     gap: 1.39vw;
     align-items: center;
   }
 
-  .reviewsContainer .singleReview .bottomContainer .customerContainer .leftSide {
+  .reviewsContainer
+    .singleReview
+    .bottomContainer
+    .customerContainer
+    .leftSide {
     position: relative;
     width: 4.72vw;
     height: 4.72vw;
@@ -1067,7 +1088,11 @@
     height: 100%;
   }
 
-  .reviewsContainer .singleReview .bottomContainer .customerContainer .rightSide {
+  .reviewsContainer
+    .singleReview
+    .bottomContainer
+    .customerContainer
+    .rightSide {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -1081,14 +1106,22 @@
     color: #000000;
   }
 
-  .singleReview .bottomContainer .customerContainer .rightSide .customerAddress {
+  .singleReview
+    .bottomContainer
+    .customerContainer
+    .rightSide
+    .customerAddress {
     font-family: "Inika";
     font-weight: 400;
     font-size: 0.97vw;
     color: #767676;
   }
 
-  .singleReview .bottomContainer .customerContainer .rightSide .customerFeedback {
+  .singleReview
+    .bottomContainer
+    .customerContainer
+    .rightSide
+    .customerFeedback {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -1165,9 +1198,9 @@
   .contactSection .topSide .rightSide {
     position: relative;
     width: 33.33vw;
-    border: 0.07vw solid #E7E6E6;
+    border: 0.07vw solid #e7e6e6;
     border-radius: 1.11vw;
-    box-shadow: 0vw 0.14vw 0.91vw 0.21vw #CBCBCB52;
+    box-shadow: 0vw 0.14vw 0.91vw 0.21vw #cbcbcb52;
   }
 
   .contactSection .topSide .rightSide .contactForm {
@@ -1180,7 +1213,7 @@
   .contactSection .topSide .rightSide .contactForm input {
     width: 100%;
     height: 2.78vw;
-    border: 0.07vw solid #EAE9E9;
+    border: 0.07vw solid #eae9e9;
     border-radius: 0.83vw;
     text-indent: 0.69vw;
     font-family: "Inika";
@@ -1193,16 +1226,16 @@
     font-family: "Inika";
     font-weight: 400;
     font-size: 0.97vw;
-    color: #ADADAD;
+    color: #adadad;
   }
 
   .topSide .rightSide .contactForm input:hover::placeholder {
-    color: #A1A1A3;
+    color: #a1a1a3;
   }
 
   .contactSection .topSide .rightSide .contactForm textarea {
     height: 12.43vw;
-    border: 0.07vw solid #EAE9E9;
+    border: 0.07vw solid #eae9e9;
     border-radius: 0.83vw;
     resize: none;
     overflow: auto;
@@ -1217,18 +1250,18 @@
     font-family: "Inika";
     font-weight: 400;
     font-size: 0.97vw;
-    color: #ADADAD;
+    color: #adadad;
   }
 
   .topSide .rightSide .contactForm textarea:hover::placeholder {
-    color: #A1A1A3;
+    color: #a1a1a3;
   }
 
   .contactSection .topSide .rightSide .contactForm .inputSubmit {
     width: 100%;
     height: 3.47vw;
-    background-color: #229F90;
-    color: #FFFFFF;
+    background-color: #229f90;
+    color: #ffffff;
     transition: background-color 0.1s ease;
     font-family: "Inika";
     font-weight: 500;
@@ -1237,7 +1270,7 @@
   }
 
   .contactSection .topSide .rightSide .contactForm .inputSubmit:hover {
-    background-color: #11685E;
+    background-color: #11685e;
   }
 
   .contactSection .bottomSide {
@@ -1266,9 +1299,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 0.07vw solid #E7E6E6;
+    border: 0.07vw solid #e7e6e6;
     border-radius: 1.11vw;
-    box-shadow: 0vw 0.14vw 0.91vw 0.21vw #CBCBCB52;
+    box-shadow: 0vw 0.14vw 0.91vw 0.21vw #cbcbcb52;
   }
 
   .contactSection .bottomSide .cards .singleCard .topSide {
@@ -1276,7 +1309,7 @@
     flex-direction: column;
     align-items: center;
     width: 16.67vw;
-    border-bottom: 0.14vw solid #DFE5E8;
+    border-bottom: 0.14vw solid #dfe5e8;
     padding-bottom: 1.25vw;
     margin-bottom: 1.04vw;
   }
@@ -1368,7 +1401,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1.39vw;
-    border-bottom: 0.07vw solid #DFE5E8;
+    border-bottom: 0.07vw solid #dfe5e8;
     padding-bottom: 1.42vw;
   }
 
@@ -1385,9 +1418,9 @@
     height: 100%;
     cursor: pointer;
   }
-  
+
   .carousel-modal {
-    display: block; 
+    display: block;
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -1405,7 +1438,7 @@
     visibility: visible;
     transition: opacity 0.5s ease;
   }
-  
+
   .carousel-image {
     position: absolute;
     top: 0;
@@ -1414,7 +1447,7 @@
     height: 100vh;
     object-fit: contain;
   }
-  
+
   .close {
     position: absolute;
     top: 1.39vw;
@@ -1422,7 +1455,7 @@
     cursor: pointer;
     z-index: 1;
   }
-  
+
   .prev,
   .next {
     position: absolute;
@@ -1437,13 +1470,14 @@
     position: relative;
     width: 100%;
     height: 100%;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(301deg) brightness(111%) contrast(101%);
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(301deg)
+      brightness(111%) contrast(101%);
   }
-  
+
   .prev {
     left: 1.39vw;
   }
-  
+
   .next {
     right: 2vw;
   }
@@ -1456,16 +1490,16 @@
     display: flex;
     gap: 0.69vw;
   }
-  
+
   .indicator {
     width: 0.97vw;
     height: 0.97vw;
-    background-color: #FFFFFF80;
+    background-color: #ffffff80;
     border-radius: 50%;
     transition: background-color 0.3s ease;
     cursor: pointer;
   }
-  
+
   .indicator.active {
     background-color: #154259;
   }
@@ -1479,8 +1513,8 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: #FFFFFF80;
-    color: #FFFFFF;
+    background-color: #ffffff80;
+    color: #ffffff;
     font-family: "Inika";
     font-weight: 700;
     font-size: 2.08vw;
@@ -1505,7 +1539,7 @@
 
   .singleWorkSection .rightSide .bottomSide .textContainer .bold {
     font-weight: 700 !important;
-    color: #5C5D60 !important;
+    color: #5c5d60 !important;
   }
 
   .singleWorkSection .rightSide .bottomSide .textContainer p {
@@ -1526,7 +1560,7 @@
     font-family: "Inika";
     font-weight: 400;
     font-size: 1.39vw;
-    color: #2A93C0;
+    color: #2a93c0;
     margin-bottom: 1.39vw;
   }
 
@@ -1593,7 +1627,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(182deg, #FFFEFE 6%, rgba(255, 254, 254, 0.6) 25%, rgba(255, 255, 255, 0) 44%);
+    background: linear-gradient(
+      182deg,
+      #fffefe 6%,
+      rgba(255, 254, 254, 0.6) 25%,
+      rgba(255, 255, 255, 0) 44%
+    );
     pointer-events: none;
     z-index: 1;
   }
@@ -1620,13 +1659,13 @@
   .aboutSection .bottomLeft {
     left: 0;
     bottom: -5vw;
-    background: linear-gradient(180deg, #95DCEF 0%, #C0EEFB 100%);
+    background: linear-gradient(180deg, #95dcef 0%, #c0eefb 100%);
   }
 
   .aboutSection .topRight {
     top: 0;
     right: 0;
-    background: linear-gradient(180deg, #F2EB79 0%, #FAF9D6 100%);
+    background: linear-gradient(180deg, #f2eb79 0%, #faf9d6 100%);
   }
 
   .aboutSection .textContainer p {
